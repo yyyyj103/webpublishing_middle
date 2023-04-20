@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'KIMM_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: 'KIMM_Bold';
+
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+header{
+    position: fixed; 
+    width: 100%;
+    z-index: 1;
+}
+h1{
+    background-color: #ff9edb;
+}
+nav{
+    background-color: #ff9edb51;
+}
+nav:hover{
+    background-color: #ff9edb;
+    transition: 0.3s;
+}
+#logo{
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+#main_menu{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main_menu a{
+    padding: 3px 10px;
+    margin: 0 10px;
+    font-size: 12px;
+    color: #808080;
+}
+#main_menu > li:hover > a {
+    color: #000000;
+    border-bottom: solid 3px #ff00a2;
+    transition: 0.3s;
+}
+#section1{
+    background-color: #ffeff9;
+    background-size: cover;
+    height: 100vh;
+    z-index: 2;
+}
+#main_diary>#diary1, #diary2{
+    display: block;
+    margin: auto;
+    width: 800px;
+    padding-top: 180px;
+}
+#main_diary{
+    position: relative;
+    margin: 0 auto;
+    width: 800px;
+}
+#diary2{
+    position: absolute;
+    top: 0;
+    left: 50px;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+#main_diary:hover #diary1{
+    opacity: 0;
+}
+#main_diary:hover #diary2, #next{
+    opacity: 1;
+}
+#next{
+    position: absolute;
+    top: 562px;
+    left: 615px;
+    width: 80px;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+#main_diary:hover #next{
+    opacity: 1;
+}
+footer{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    border-top: solid 1px gray;
+    font-size: 12px;
+}
+#footer_info li{
+    display: inline-block;
+}
+#footer_menu li{
+    display: inline-block;
+    padding: 10px;
+    margin-right: 30px;
+}
+#footer img{
+    margin: 30px;
+}
+#footer_logo{
+    flex-grow: 0;
+    width: 150px;
+
+}
+.two_line{
+    flex-direction: row;
+    flex-grow: 1;
+}
+#footer_menu{
+    flex-grow: 0;
+}
